@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 
-export const useInput = () => {
-    const [inputs,setInputs] = useState({})
+export const useInput = (params) => {
+    const [inputs,setInputs] = useState(params)
 
     const handleChange = (e)=>{
         setInputs({...inputs,[e.target.name]:e.target.value})

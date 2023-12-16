@@ -16,7 +16,7 @@ function App() {
   //burada useInputta bos birdeger verdimi hata aliriy nedin unkontrol vea kontrol konsolda coyukiuor react doma ilgili
   //console.js:213 Warning: A component is changing an uncontrolled input to be controlled.
   //bu yuden baslangic degeri veritir
-  const [inputs,setInputs] = useInput()
+  const [inputs,setInputs] = useInput({name:'',age:'',email:''})
 
   return (
     <div className="App">
